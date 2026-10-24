@@ -1,0 +1,953 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: 100%;
+    background: #1E2538;
+    background-image: url(./img/backgrount-img.png);
+    background-repeat: no-repeat;
+}
+
+header {
+    margin: 25px calc(13.4375vw - 14px) 51px calc(13.375vw - 14px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: calc(2.1875vw + 87px);
+    height: 56px;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Qanelas'sans-serif;
+    font-weight: 700px;
+    font-size: 17px;
+    line-height: 100%;
+}
+
+header .buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+header .buttons .reg {
+    cursor: pointer;
+    width: calc(4.5vw + 51.6px);
+    height: calc(1.625vw + 21.8px);
+    border-radius: 10px;
+    background: #3657CB;
+    box-shadow: 0px 0px 15px 0px #4871FFCC;
+    border: none;
+    color: #fff;
+}
+
+header .buttons .search {
+    cursor: pointer;
+    width: calc(1.65vw + 23.2px);
+    height: calc(1.5625vw + 22px);
+    border-radius: 10px;
+    border-width: 1px;
+    background: #FFFFFF;
+}
+
+@media (min-width: 429px) {
+    header .setting {
+        display: none;
+    }
+}
+
+@media (max-width: 1220px) {
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .buttons {
+        width: 100%;
+        position: absolute;
+        top: 5%;
+        left: 0%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        margin: 25px calc(13.4375vw - 20px) 51px calc(13.375vw - 14px);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: none;
+    }
+}
+
+@media (max-width: 428px) {
+    header {
+        margin: 25px calc(13.4375vw - 20px) 51px calc(13.375vw - 14px);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    header .buttons .setting {
+        position: absolute;
+        cursor: pointer;
+        width: calc(1.65vw + 23.2px);
+        height: calc(1.5625vw + 22px);
+        border-radius: 10px;
+        border-width: 1px;
+        background: #FFFFFF;
+    }
+}
+
+main {
+    margin: 25px calc(13.4375vw - 14px) 51px calc(13.375vw - 14px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.now-a-days-in-the-cinema {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tipe-of-now-a-days-in-the-cinema {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tipe-of-now-a-days-in-the-cinema h2 {
+    color: #fff;
+    font-size: calc(2vw + 25.6px);
+}
+
+.tipe-of-now-a-days-in-the-cinema nav ul {
+    display: flex;
+    gap: calc(0.625vw + 8px);
+    align-items: center;
+}
+
+.tipe-of-now-a-days-in-the-cinema nav ul li {
+    list-style: none;
+}
+
+.tipe-of-now-a-days-in-the-cinema nav ul li a {
+    font-size: calc(1vw + 4.8px);
+    text-decoration: none;
+    color: #fff;
+}
+
+.tipe-of-now-a-days-in-the-cinema button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.controler-of-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card-of-now-day_2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.balls {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 46px;
+    height: 27px;
+    border-radius: 5px;
+    background: #89CB36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.name-of-movei {
+    color: #FFFFFF;
+}
+
+.discribe-of-movei {
+    color: gold;
+}
+
+.card-of-now-day {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.card-of-now-day img {
+    width: 98%;
+    height: auto;
+}
+
+.card-of-now-day_2 img {
+    width: 98%;
+    height: auto;
+}
+
+.joker {
+    background: #3657CBA6;
+}
+
+.card-of-now-day-hidden {
+    display: none;
+}
+
+@media (max-width: 1244px) {
+    .line {
+        display: none;
+    }
+}
+
+@media (max-width: 1060px) {
+    .tipe-of-now-a-days-in-the-cinema {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+}
+
+@media (max-width: 1060px) {
+    .now-a-days-in-the-cinema {
+        display: flex;
+        justify-content: center;
+    }
+
+    .controler-of-card {
+        width: 100%;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-of-now-day-hidden {
+        width: calc(8.25vw + 181.6px);
+    }
+
+    .card-of-now-day_2 {
+        width: 100%;
+    }
+
+    .card-of-now-day {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tipe-of-now-a-days-in-the-cinema {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tipe-of-now-a-days-in-the-cinema button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 40px;
+    }
+
+    .controler-of-card {
+        width: 100%;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-of-now-day-hidden {
+        display: none;
+    }
+
+    .card-of-now-day_2 {
+        width: 100%;
+    }
+
+    .card-of-now-day {
+        width: 100%;
+    }
+
+    .tipe-of-now-a-days-in-the-cinema nav {
+        display: none;
+    }
+
+    .tipe-of-now-a-days-in-the-cinema button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .tipe-of-now-a-days-in-the-cinema button {
+        display: none;
+    }
+}
+
+.the-section-of-trelers {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-of-trelars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-of-trelars h1 {
+    color: #fff;
+    font-size: calc(2.0625vw + 25.4px);
+}
+
+.all-trelers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.all-trelers a {
+    color: #FFFFFF;
+}
+
+.about-forsashe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dissdribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+
+.dissdribe h2 {
+    color: #fff;
+    font-size: calc(2.0625vw + 25.4px);
+}
+
+.dissdribe img {
+    width: calc(2.1875vw + 87px);
+}
+
+.thinkings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px
+}
+
+.likes-and-dislikes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px; 
+}
+
+.likes-and-dislikes span {
+    color: #fff;
+}
+
+.likes-and-dislikes button {
+    width: calc(1.775625vw + 24.778px);
+    height: calc(1.775625vw + 24.778px);
+    border-radius: 5px;
+    background: #1E2538;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 468px) {
+    .name-of-trelars {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dissdribe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+    }
+}
+
+.overflow {
+    scrollbar-color: #3657CB #1B2133;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.overflow span {
+    color: #fff;
+}
+
+.popular-movie {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.tipe-of-popular-movie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tipe-of-popular-movie h1 {
+    color: #fff;
+    font-size: calc(2.75vw + 11.2px);
+}
+
+.tipe-of-popular-movie nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.tipe-of-popular-movie nav ul li {
+    list-style: none;
+}
+
+.tipe-of-popular-movie nav ul li a {
+    font-size: 23px;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 1440px) {
+    .tipe-of-popular-movie {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: start;
+    }
+
+    .tipe-of-popular-movie img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .tipe-of-popular-movie nav {
+        display: none;
+    }
+
+    .tipe-of-popular-movie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#splide1 .splide {
+    width: 100%;
+}
+
+#splide1 .splide__list {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+#splide1 .splide__slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#splide1 .splide__slide img {
+    width: 100%;
+}
+
+#splide1 .splide__slide p {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+#splide1 .splide__slide span {
+    font-size: 11px;
+    color: gold;
+}
+
+.popular-actors {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.name-of-main-actors {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-of-main-actors h1 {
+    color: #fff;
+    font-size: calc(2.8125vw + 11px);
+}
+
+.name-of-main-actors nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.name-of-main-actors nav ul li {
+    list-style: none;
+}
+
+.name-of-main-actors nav ul li a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .name-of-main-actors {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.parent-of-card-of-popular-octors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-of-popular-octors {
+    position: relative;
+    width: auto;
+}
+
+.card-of-popular-octors img {
+    width: 100%;
+    height: auto;
+}
+
+.name-of-popular-movie-octors {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    bottom: 5%;
+}
+
+.name-of-popular-movie-octors p {
+    color: gold;
+}
+
+.Discuss-of-card-of-popular-octors {
+    display: flex;
+    flex-direction: column;
+}
+
+.Discuss-of-card-of-popular-octors h3 {
+    color: #FFFFFF;    
+}
+
+.Discuss-of-card-of-popular-octors span {
+    color: #FFFFFF;
+}
+
+.card-of-another-octors {
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    background-color: #1B2133;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-of-another-octors {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-place {
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.03125vw + 4px);
+}
+
+.place {
+    color: gold;
+    font-size: calc(0.025vw + 13.2px);
+}
+
+.content-place h4 {
+    font-family: Qanelas;
+    font-weight: 700;
+    font-size: calc(0.03125vw + 14px);
+    color: #FFFFFF;
+}
+
+.english-name {
+    font-family: Qanelas;
+    font-weight: 600;
+    font-size: calc(0.05vw + 8.4px);
+    color: gray;
+}
+
+.age {
+    color: gold;
+    font-size: calc(0.025vw + 13.2px);
+}
+
+@media (max-width: 1220px) {
+    .parent-of-card-of-popular-octors {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .card-of-another-octors {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+    }
+}
+
+.last-news {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.last-news-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.last-news-head h1 {
+    color: #fff;
+    font-size: calc(2.0625vw + 20.4px);
+}
+
+.all-news a {
+    color: #FFFFFF;
+}
+
+.news-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-news {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main-news-img {
+    width: 100%;
+}
+
+.text-in-main-news {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.not-main {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.not-main span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #fff;
+}
+
+.main h4{
+    color: hsl(0, 0%, 100%);
+    font-size: calc(1.5625vw + 15px);
+}
+
+.main p {
+    color: #fff;
+}
+
+.parent-of-news {
+    width: auto;
+}
+
+.new {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.new img {
+    width: 100%;
+    height: auto;
+}
+
+.new2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.new2 img {
+    width: 100%;
+    height: auto;
+}
+
+.new1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.new1 img {
+    width: 100%;
+    height: auto;
+}
+
+.text-in-news {
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-in-news span {
+    color: #fff;
+    font-size: calc(0.3125vw + 12px);
+}
+
+.text-in-news button {
+    color: #fff;
+    background: #3657CB94;
+    border: 2px solid #FFFFFF;
+}
+
+@media (max-width: 1220px) {
+    .last-news {
+        padding-top: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .news-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .parent-of-news {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .new1 {
+        display: none;
+    }
+}
+
+@media (max-width: 476px) {
+    .new2 {
+        display: none;
+    }
+
+    .main p {
+        display: none;
+    }
+}
+
+@media (max-width: 590px) {
+    .all-news {
+        display: none;
+    }
+}
+
+.weiting-news {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-of-weiting-news {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-of-weiting-news h1 {
+    color: #fff;
+    font-size: calc(2.0625vw + 20.4px);
+}
+
+.show-the-slides {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.show-the-slides span {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .weiting-news {
+        position: relative;
+        padding-top: 50px;
+    }
+    
+    .name-of-weiting-news {
+        position: absolute;
+        top: 0;
+        flex-direction: column;
+        gap: 280px;
+    }
+}
+
+#splide2 .splide {
+    width: 100%;
+}
+
+#splide2 .splide__list {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+#splide2 .splide__slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#splide2 .splide__slide img {
+    width: 100%;
+}
+
+#splide2 .splide__slide .name-of-movei-splide {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+#splide2 .splide__slide .time-to-open {
+    font-size: 11px;
+    color: gold;
+}
